@@ -1,0 +1,26 @@
+<html>
+
+<body>
+
+<h1 align="center">城市天气查询系统</h1>
+
+<div align = "center">
+  <img src="{{url_for('static', filename='weather.jpg')}}" width="450" height="450" alt="Weather Forecast">
+</div>
+<div align ="center">
+  <form align = "center" action="user_request">
+  城市:
+  <input type="text" name="city">
+  <input type="submit" value="查询" name="query">
+  <input type="submit" value="历史" name="history">
+  <input type="submit" value="帮助" name="help">
+
+  </form>
+
+</div>
+{%block content%}
+{%endblock%}
+
+</body>
+
+</html>

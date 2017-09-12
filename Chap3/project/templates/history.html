@@ -1,0 +1,16 @@
+<html>
+
+<body>
+  <div align='center'>
+    {% extends "index.html" %}
+    {%block content%}
+    {% for data in history %}
+    {{data}}<br>
+    {% endfor %}
+    {%endblock%}
+  </div>
+
+
+</body>
+
+</html>
